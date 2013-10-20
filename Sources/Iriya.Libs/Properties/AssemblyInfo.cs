@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Iriya.Libs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("MouseComputer PC")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Iriya.Libs")]
-[assembly: AssemblyCopyright("Copyright © MouseComputer PC 2013")]
+[assembly: AssemblyCopyright("Copyright © Yasuyuki Saito")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
