@@ -63,10 +63,17 @@
                         {
                             if (m.GetCustomAttributes(true).Length > 0)
                             {
+                                IList<Attribute> attrs = new List<Attribute>();
+                                foreach (object o in m.GetCustomAttributes(true))
+                                {
+                                    if (o is Attribute)
+                                        attrs.Add(o as Attribute);
+                                }
+
                                 AttributeInfoData data = new AttributeInfoData();
                                 data.Class      = t;
                                 data.Method     = m;
-                                data.Attributes = m.GetCustomAttributes(true) as Attribute[];
+                                data.Attributes = attrs.ToArray();
                                 list.Add(data);
                             }
                         }
